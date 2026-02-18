@@ -1,14 +1,17 @@
 function Services() {
   const services = [
     {
+      id: 'consultoria',
       title: 'Consultoria',
       description: 'Orientação especializada para o crescimento do seu negócio.'
     },
     {
+      id: 'desenvolvimento',
       title: 'Desenvolvimento',
       description: 'Criação de soluções tecnológicas personalizadas.'
     },
     {
+      id: 'suporte',
       title: 'Suporte',
       description: 'Assistência técnica completa para sua empresa.'
     }
@@ -19,8 +22,8 @@ function Services() {
       <div className="container">
         <h2>Nossos Serviços</h2>
         <div className="services-grid">
-          {services.map((service, index) => (
-            <div key={index} className="service-card">
+          {services.map((service) => (
+            <div key={service.id} className="service-card">
               <h3>{service.title}</h3>
               <p>{service.description}</p>
             </div>
