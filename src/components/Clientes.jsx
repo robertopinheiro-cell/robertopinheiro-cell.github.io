@@ -46,7 +46,7 @@ function Clientes() {
   };
 
   return (
-    <section id="servicos" className="services">
+    <section id="clientes" className="clientes">
       <div className="container">
         <motion.h2
           initial={{ opacity: 0, y: 30 }}
@@ -54,7 +54,7 @@ function Clientes() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          Nossos Serviços
+          Nossos Clientes
         </motion.h2>
         <motion.div 
           className="services-grid"
