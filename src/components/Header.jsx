@@ -9,8 +9,8 @@ function Header() {
     const handleScroll = () => {
       setScrolled(window.scrollY > 50);
 
-      // Detect active section
-      const sections = ['home', 'sobre', 'servicos', 'clientes', 'contato'];
+      // Adicionando 'agenda' às seções detectáveis
+      const sections = ['home', 'sobre', 'servicos', 'clientes', 'contato', 'agenda'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -92,6 +92,16 @@ function Header() {
               className={activeSection === 'contato' ? 'active' : ''}
             >
               Contato
+            </a>
+          </li>
+          {/* Link da Agenda adicionado */}
+          <li>
+            <a 
+              href="#agenda" 
+              onClick={(e) => handleNavClick(e, 'agenda')}
+              className={activeSection === 'agenda' ? 'active' : ''}
+            >
+              Agenda
             </a>
           </li>
         </ul>

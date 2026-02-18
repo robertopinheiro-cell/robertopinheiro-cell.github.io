@@ -6,6 +6,7 @@ import Clientes from './components/Clientes'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
 import ScrollProgress from './components/ScrollProgress'
+import Agenda from './components/Agenda'
 import './styles.css'
 
 function App() {
@@ -19,6 +20,10 @@ function App() {
         <Services />
         <Clientes />
         <Contact />
+        {/* Adicionando a seção com ID para a navegação funcionar */}
+        <section id="agenda">
+          <Agenda />
+        </section>
       </main>
       <Footer />
     </>
