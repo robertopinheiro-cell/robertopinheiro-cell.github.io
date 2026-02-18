@@ -118,3 +118,4 @@ robertopinheiro-cell.github.io/
 ---
 
 © 2026 ROP Consultoria TI. Todos os direitos reservados.
+
