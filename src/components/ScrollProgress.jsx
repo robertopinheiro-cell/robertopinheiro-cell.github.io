@@ -10,8 +10,8 @@ function ScrollProgress() {
         top: 0,
         left: 0,
         right: 0,
-        height: '3px',
-        background: '#DC2626',
+        height: 'var(--scroll-progress-height)',
+        background: 'var(--red-primary)',
         transformOrigin: '0%',
         scaleX: scrollYProgress,
         zIndex: 9999

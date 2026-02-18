@@ -10,6 +10,9 @@
     --gray-text: #6B7280;
     --gray-dark: #374151;
     --black-soft: #111827;
+    
+    /* Layout */
+    --scroll-progress-height: 3px;
 }
 
 * {
@@ -36,7 +39,7 @@ body {
 header {
     position: fixed;
     width: 100%;
-    top: 3px; /* Account for scroll progress bar */
+    top: var(--scroll-progress-height);
     z-index: 1000;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
