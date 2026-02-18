@@ -91,7 +91,7 @@ function Header() {
               onClick={(e) => handleNavClick(e, 'contato')}
               className={activeSection === 'contato' ? 'active' : ''}
             >
-              Contato2
+              Contato
             </a>
           </li>
         </ul>
