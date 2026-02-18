@@ -10,7 +10,7 @@ function Header() {
       setScrolled(window.scrollY > 50);
 
       // Detect active section
-      const sections = ['home', 'sobre', 'servicos', 'contato'];
+      const sections = ['home', 'sobre', 'servicos', 'clientes', 'contato'];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -74,6 +74,15 @@ function Header() {
               className={activeSection === 'servicos' ? 'active' : ''}
             >
               Serviços
+            </a>
+          </li>
+          <li>
+            <a 
+              href="#clientes" 
+              onClick={(e) => handleNavClick(e, 'clientes')}
+              className={activeSection === 'clientes' ? 'active' : ''}
+            >
+              Clientes
             </a>
           </li>
           <li>
